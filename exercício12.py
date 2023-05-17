@@ -10,3 +10,5 @@ if p2<p1 and p2<p3:
     print ("O produto %s é mais barato e custa R$%s" %(n2,p2))
 if p3<p1 and p3<p2:
     print ("O produto %s é mais barato e custa R$%s"% (n3,p3))
+else:
+    print("Todos os produtos possuem o mesmo valor!")
