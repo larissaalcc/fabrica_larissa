@@ -35,25 +35,25 @@ while True:
         cont=cont+1
         mat=cont
         print("Bem vindo, por favor preencha os dados a seguir!")
-        nome= input("Digite seu nome: ")
+        nome= str (input("Digite seu nome: "))
         lnome.append (nome)
 
-        sobrenome= input("Sobrenome: ")
+        sobrenome= str(input("Sobrenome: "))
         lsobrenome.append(sobrenome)    
 
-        endereco= input("Seu endereço (rua, n°); ")
+        endereco= str (input("Seu endereço (rua, n°); "))
         lendereco.append(endereco)
 
-        bairro= input("Bairro: ")
+        bairro= str (input("Bairro: "))
         lbairro.append(bairro)
 
-        cidade= input("Cidade: ")
+        cidade= str (input("Cidade: "))
         lcidade.append(cidade)
 
-        estado= input("Estado: ")
+        estado= str (input("Estado: "))
         lestado.append(estado)
 
-        pais= input("País: ")
+        pais= str (input("País: "))
         lpais.append(pais)
         
         fone= int (input("Telefone para contato: "))
@@ -74,19 +74,19 @@ while True:
         cartao= float (input("Número do cartão: "))
         lcartao.append(cartao)
 
-        email= input("Email para contato: ")
+        email= str (input("Email para contato: "))
         lemail.append(email)
 
         cep= int(input("CEP da residência: "))
         lcep.append(cep)
 
-        n1= float(input("Primeira nota: "))
+        n1= int(input("Primeira nota: "))
         ln1.append(n1)
-        n2= float(input("Segunda nota: "))
+        n2= int(input("Segunda nota: "))
         ln2.append(n2)
-        n3= float(input("Terceira nota: "))
+        n3= int(input("Terceira nota: "))
         ln3.append(n3)
-        n4= float (input("Quarta nota: "))
+        n4= int (input("Quarta nota: "))
         ln4.append(n4)
          
         media= print("Sua média: ")
@@ -96,13 +96,13 @@ while True:
         
        
         
-        serie= input("Série: ")
+        serie= int (input("Série: "))
         lserie.append(serie)
 
         classe= str(input("Classe: "))
         lclasse.append(classe)
 
-        sexo= input("Sexo (F para feminino, M para masculino, O para outros): ")
+        sexo= str (input("Sexo (F para feminino, M para masculino, O para outros): "))
         lsexo.append(sexo)
         if sexo== "f" or sexo== "F":
             print("feminino")
@@ -115,15 +115,18 @@ while True:
         cor= input("Sua cor: ")
         lcor.append(cor)
         print(">>>>CADASTRO CONCLUÍDO<<<< \n")
-       
-        lmatricula.append()
     elif p=="2":
-        
+
         print("Vamos consultar sua matrícula!\n")
         mat= input("Digite o número da sua matrícula:\n")
         
         print("MATRÍCULA",cont[mat-1], "\nNOME:", lnome[mat-1], "\nSOBRENOME:",lsobrenome[mat-1],"ENDEREÇO:", lendereco[mat-1], "BAIRRO:",lbairro[mat-1], "CIDADE:", lcidade[mat-1],
-             "ESTADO:",lestado[mat-1], "PAÍS:",lpais[mat-1],"FONE:", lfone[mat-1],  "CPF:", lfone[mat-1], "PESO:", lpeso[mat-1],"ALTURA:", laltura[mat-1], lcartao [mat-1], "EMAIL:", lemail[mat-1],"CEP:",lcep[mat-1],"N1:" ,ln1[mat-1],"N2:", ln2[mat-1],"N4:",ln3[mat-1],"MÉDIA:",lmedia[mat-1], "SÉRIE:", lserie[mat-1],
+             "ESTADO:",lestado[mat-1], "PAÍS:",lpais[mat-1],"FONE:", lfone[mat-1],  "CPF:", lfone[mat-Exception has occurred: TypeError
+             unsupported operand type(s) for -: 'str' and 'int'
+               File "C:\Users\IANGA\Documents\GitHub\fabrica_larissa\exercíciolista.py", line 123, in <module>
+                 print("MATRÍCULA",cont[mat-1], "\nNOME:", lnome[mat-1], "\nSOBRENOME:",lsobrenome[mat-1],"ENDEREÇO:", lendereco[mat-1], "BAIRRO:",lbairro[mat-1], "CIDADE:", lcidade[mat-1],
+                                        ~~~^~
+             TypeError: unsupported operand type(s) for -: 'str' and 'int'1], "PESO:", lpeso[mat-1],"ALTURA:", laltura[mat-1], lcartao [mat-1], "EMAIL:", lemail[mat-1],"CEP:",lcep[mat-1],"N1:" ,ln1[mat-1],"N2:", ln2[mat-1],"N4:",ln3[mat-1],"MÉDIA:",lmedia[mat-1], "SÉRIE:", lserie[mat-1],
              "CLASSE:", lclasse [mat-1],"SEXO:",lsexo[mat-1],"COR",lcor[mat-1] )
       
         
