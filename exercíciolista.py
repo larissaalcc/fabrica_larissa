@@ -120,8 +120,7 @@ while True:
         print("Vamos consultar sua matrícula!\n")
         mat= input("Digite o número da sua matrícula:\n")
         
-        print("MATRÍCULA",cont[mat-1], "\nNOME:", lnome[mat-1], "\nSOBRENOME:",lsobrenome[mat-1],"ENDEREÇO:", lendereco[mat-1], "BAIRRO:",lbairro[mat-1], "CIDADE:", lcidade[mat-1],
-             "ESTADO:",lestado[mat-1], "PAÍS:",lpais[mat-1],"FONE:", lfone[mat-1],  "CPF:", lfone[mat-Exception has occurred: TypeError
+        print("MATRÍCULA",cont[mat-1], "\nNOME:", lnome[mat-1], "\nSOBRENOME:",lsobrenome[mat-1],"ENDEREÇO:", lendereco[mat-1], "BAIRRO:",lbairro[mat-1], "CIDADE:", lcidade[mat-1],"ESTADO:",lestado[mat-1], "PAÍS:",lpais[mat-1],"FONE:", lfone[mat-1],  "CPF:", lfone[mat-Exception has occurred: TypeError
              unsupported operand type(s) for -: 'str' and 'int'
                File "C:\Users\IANGA\Documents\GitHub\fabrica_larissa\exercíciolista.py", line 123, in <module>
                  print("MATRÍCULA",cont[mat-1], "\nNOME:", lnome[mat-1], "\nSOBRENOME:",lsobrenome[mat-1],"ENDEREÇO:", lendereco[mat-1], "BAIRRO:",lbairro[mat-1], "CIDADE:", lcidade[mat-1],
